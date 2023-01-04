@@ -50,9 +50,8 @@ include 'koneksi.php';
                                 <td><?php echo $data['tahun_masuk'];?></td>
                                 <td><?php echo $data['foto'];?></td>
                                 <td><a href="olah.php?edit=<?php echo $data['id']?>" type="submit" class="btn btn-warning" >Update</a>
-                                <a href="olah.php?edit=<?php echo $data['id']; ?>" type="submit" class="btn btn-danger" >Delete</a>
-                                
-                            </td>
+                                <a href="proses.php?hapus=<?php echo $data['id']; ?>" type="submit" class="btn btn-danger" >Delete</a>
+                                </td>
                             </tr>
 
                             <?php

@@ -12,7 +12,7 @@
 
     <title>Halaman Masuk</title>
   </head>
-  <body style="background-color:#2596be ;">
+  <body style="background-color:#329D9C ;">
     
             <section>
                 <div class="container">
@@ -24,25 +24,19 @@
                                 <label for="exampleFormControlInput1" class="form-label">Username</label>
                                 <input type="email" class="form-control"  placeholder="Masukan Username">
                             </div>
-                            <div class="mb-4">
-                                <label for="exampleFormControlInput1" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Masukan Password">
+                                <div class="mb-4">
+                                    <label for="exampleFormControlInput1" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Masukan Password">
                             </div>
                                 <div class="row align-self-center">
                                     <div class="button text-center">
+                                        <a href="main.html" ><button type="button" class="btn daftar btn-outline-success" >Masuk</button></a>
+                                        <a href="index.html" ><button type="button" class="btn masuk btn-outline-danger">Kembali</button></a>
                                         </div>
                                     </div>
                                 </div> 
-                                <?php
-                                if (isset($_GET['edit'])){
-                                    echo 
-                                }
                                 
-                                
-                                ?>
                             </div>
-                            <a href="main.html" ><button type="button" class="btn daftar btn-outline-success" >Masuk</button></a>
-                            <a href="index.html" ><button type="button" class="btn masuk btn-outline-danger">Kembali</button></a>
                     </div>
                 </div>
             </section>

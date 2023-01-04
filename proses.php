@@ -1,18 +1,10 @@
 <?php
+include  'koneksi.php';
 
-
-
-
-
-?>
-
-
-<?php
-                                            if (isset($_GET['edit'])){
-                                                echo "<button type='submit' name='btnproses' value='edit' class='btn btn-outline-success' >Simpan Perubahan</button>";
-                                            }else {
-                                                echo "<button type='submit' name='btnproses' value='tambah' class='btn btn-outline-success' >Tambah data</button>";
-                                            }
-                                            
-                                            ?>
-                                        
+if (isset($POST['btnmasuk'])){
+    $query="INSERT INTO data VALUES('','$nama')";
+    $sql=mysqli_query($konek,$query);
+    if($sql){
+        header('location:index.php');
+    }
+}
